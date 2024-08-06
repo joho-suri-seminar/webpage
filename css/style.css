@@ -55,7 +55,34 @@ dd {margin: 0;}
 nav {margin: 0;padding: 0;}
 
 /*table全般の設定*/
-table {border-collapse:collapse;}
+/*table {border-collapse:collapse;}*/
+
+table{
+  width: 100%;
+}
+
+table th{
+  position: relative;
+  text-align: left;
+  width: 15%;
+}
+
+table th:after{
+  display: block;
+  content: "";
+  width: 30px;
+  height: 2px;
+  background-color: #333;
+  position: absolute;
+  top:calc(50% - 1px);
+  right:-15px;
+}
+
+table td{
+  text-align: left;
+  padding:7px 0 7px 30px;
+  width: 85%;
+}
 
 /*画像全般の設定*/
 img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
