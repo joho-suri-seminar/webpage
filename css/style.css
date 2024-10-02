@@ -223,6 +223,7 @@ main p {
 
 .new dt {
     width: 8em;
+    padding-right: 2em;
 }
 
 .new dd {
