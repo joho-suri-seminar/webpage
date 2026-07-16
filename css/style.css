@@ -274,6 +274,28 @@ main p { margin: 1rem 0; }
 
 .look p { margin: 0; }
 
+/* 講演者向け手続きガイド（〆切チップ付き） */
+.guide-list { list-style: none; margin: .8rem 0 .5rem; padding: 0; }
+.guide-list li {
+    display: flex;
+    gap: .8rem;
+    align-items: baseline;
+    padding: .65rem 0;
+    border-top: 1px dashed var(--line);
+}
+.guide-list .due {
+    flex-shrink: 0;
+    font-size: .76rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--navy);
+    border-radius: 5px;
+    padding: .2rem .6rem;
+    white-space: nowrap;
+}
+.guide-body { font-size: .95rem; line-height: 1.65; }
+.guide-body a { word-break: break-all; }
+
 /* ===== NEWS ===== */
 .section-head {
     display: flex;
