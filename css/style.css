@@ -397,6 +397,12 @@ main p { margin: 1rem 0; }
 }
 
 .ta1 ul { margin: 0; padding-left: 1.1em; }
+.ta1 td > p:first-child { margin-top: 0; }
+.ta1 td > p:last-child { margin-bottom: 0; }
+
+/* 字下げ行 (折り返しても字下げ位置をそろえる) */
+.indent1 { display: block; padding-left: 1em; }
+.indent2 { display: block; padding-left: 2em; }
 
 /* ===== セミナー案内：回ごとのブロック ===== */
 .seminar-block { margin: 0 0 2.6rem; }
